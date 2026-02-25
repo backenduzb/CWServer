@@ -19,7 +19,7 @@ int run_service() {
     address.sin_addr.s_addr = INADDR_ANY;
     
     bind(server_fd, (struct sockaddr *)&address, sizeof(address));
-    listen(serveservices/r_fd, 5);
+    listen(server_fd, 5);
     
     printf("Server starts running: http://127.0.0.1:%d\n", PORT);
     
