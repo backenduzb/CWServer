@@ -36,7 +36,7 @@ int run_service() {
                    "Content-Type: text/plain\r\n"
                    "Content-Length: 12\r\n"
                    "\r\n"
-                   "Hello C Dev";
+                   "Welcome to nimadir nimadir.";
         send(client_fd, response, strlen(response), 0);
         close(client_fd);
     }
