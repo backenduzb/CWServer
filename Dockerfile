@@ -4,4 +4,5 @@ WORKDIR /webserver
 
 COPY . .
 
-RUN make start
+RUN make build
+RUN ./webserver
