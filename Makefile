@@ -14,7 +14,6 @@ $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 build: $(TARGET)
-	./$(TARGET)
 	
 clean:
 	rm -f $(OBJ) $(TARGET)
