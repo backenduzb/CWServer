@@ -5,4 +5,5 @@ WORKDIR /webserver
 COPY . .
 
 RUN make build
-RUN ./webserver
+
+CMD ["./webserver"]
