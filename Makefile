@@ -13,8 +13,8 @@ $(TARGET): $(OBJ)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-start:
-	./webserver
+start: $(TARGET)
+	./$(TARGET)
 	
 clean:
 	rm -f $(OBJ) $(TARGET)
