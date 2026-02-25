@@ -13,7 +13,7 @@ $(TARGET): $(OBJ)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-start: $(TARGET)
+build: $(TARGET)
 	./$(TARGET)
 	
 clean:
